@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Python 2 progress bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body, a {
+        color: #ffde57;
+        background-color: #4584b6;
+      }
+      h1, p {
+        text-align: center;
+      }
+      a:hover,
+      a:hover div {
+        color: #4584b6;
+        background-color: #ffde57;
+        outline: 0.05em solid #ffde57;
+      }
+      .progress {
+        background-color: lightgrey;
+        height: 300px;
+      }
+      .progress > svg {
+        display: block;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Python 2 progress bar</h1>
+
+    <div class="progress" id="progress"></div>
+
+    <h1 id="percent"></h1>
+
+    <p>Python 2.7 was released on 2010-07-03 and is EOL on 2020-01-01.
+    <p>Inspired by <a href="https://pythonclock.org/">Python 2.7 Countdown</a>, <a href="https://hugovk.github.io/chernobyl-progress-bar/">CHERNOBYL PROGRESS BAR</a> and <a href="https://hugovk.github.io/year-progress-bar/">year progress bar</a>.
+
+    <script src="progressbar.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
