@@ -6,8 +6,11 @@ window.onload = function onLoad() {
 
   function progress() {
     var now = new Date();
-    var start = new Date("2010-07-03");
-    var end = new Date("2020-01-01 23:59:59");
+    // 2010-07-03
+    var start = new Date(Date.UTC(2010, 6, 3));
+    // 2020-01-01 23:59:59
+    var end = new Date(Date.UTC(2020, 0, 1, 23, 59, 59));
+    console.log(end)
     var done = (now-start) / (end-start);
     document.getElementById("percent").innerHTML = done*100 + "%";
     return done;
